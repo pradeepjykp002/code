@@ -8,4 +8,4 @@ variable "route_table_cidr" { default = "0.0.0.0/0" }
 variable "host" {default = "aws_instance.my_web_instance.public_dns"}
 variable "web_ports" { default = ["22", "80", "443", "3306"] }
 variable "db_ports" { default = ["22", "3306"] }
-variable "images" { default = "ap-southeast-2"      = "ami-0a443decce6d88dc2" }
+variable "images" { default = "ami-0a443decce6d88dc2" }
