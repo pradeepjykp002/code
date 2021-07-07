@@ -46,7 +46,7 @@ Name = "myvpc_internet_gateway"
 
 ## create public route table (assosiated with internet gateway)
 resource "aws_route_table" "myvpc_public_subnet_route_table" 
-    {
+{
         vpc_id = "${aws_vpc.myvpc.id}"
         route 
             {
