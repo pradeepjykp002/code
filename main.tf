@@ -13,6 +13,8 @@ Name = "myvpc"
 }
 }
 
+data "aws_availability_zones" "available" {}
+
 resource "aws_subnet" "myvpc_public_subnet" {
     vpc_id = "${aws_vpc.myvpc.id}"
     cidr_block = "${var.subnet_one_cidr}"
