@@ -1,5 +1,7 @@
 - hosts: all
   tasks:
+    - name: Install Python
+      raw: yum -y install python3
     - name: install apache2
       yum: name=httpd state=present
     - name: httpd is running
